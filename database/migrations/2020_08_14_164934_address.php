@@ -16,6 +16,7 @@ class Address extends Migration
         Schema::create('address', function (Blueprint $table) {
             $table->increments('id');
             $table->string('adName');
+            $table->string('asd');
             $table->integer('fkCustomerID')->unsigned();
             $table->integer('fkCityID')->unsigned();
             $table->timestamps();
